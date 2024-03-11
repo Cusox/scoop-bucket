@@ -1,6 +1,6 @@
 # Scoop Bucket
 
-Personal Scoop Bucket
+lsilencej's scoop bucket (auto update available)
 
 ## Install
 
@@ -11,5 +11,6 @@ scoop install lsilencej/neteasemusic-beta
 
 ## Software
 
+* file-converter
 * neteasemusic-beta
 * wemeet
