@@ -1,5 +1,5 @@
 {
-    "version": "5.1.0",
+    "version": "v5.1.0",
     "description": "《明日方舟》小助手，全日常一键长草！| A one-click tool for the daily tasks of Arknights, supporting all clients.",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
@@ -17,15 +17,16 @@
     "shortcuts": [["MAA.exe", "MAA"]],
     "persist": ["config"],
     "checkver": {
-        "github": "https://github.com/MaaAssistantArknights/MaaAssistantArknights"
+        "url": "https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases",
+        "jsonpath": "$[0].tag_name"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MAA-v$version-win-x64.zip"
+                "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/$version/MAA-$version-win-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v$version/MAA-v$version-win-arm64.zip"
+                "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/$version/MAA-$version-win-arm64.zip"
             }
         }
     }
