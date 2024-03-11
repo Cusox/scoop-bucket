@@ -7,14 +7,7 @@
     "hash": "bd250e5b81901f15c203e98e387ce5aaaaaca83e5313658f14ebbc2dc37e85ec",
     "pre_install": [
         "ni \"$dir\\S302.ini\" -ItemType File",
-        "ni \"$dir\\S302.xml\" -ItemType File",
-        "ni \"$dir\\steamcommunity.crt\" -ItemType File",
-        "ni \"$dir\\steamcommunity.csr\" -ItemType File",
-        "ni \"$dir\\steamcommunity.key\" -ItemType File",
-        "ni \"$dir\\steamcommunity_302.caddy.json\" -ItemType File",
-        "ni \"$dir\\steamcommunityCA.key\" -ItemType File",
-        "ni \"$dir\\steamcommunityCA.pem\" -ItemType File",
-        "ni \"$dir\\steamcommunityCA.srl\" -ItemType File"
+        "ni \"$dir\\S302.xml\" -ItemType File"
     ],
     "installer": {
         "script": [
@@ -29,17 +22,7 @@
     },
     "bin": "steamcommunity_302.exe",
     "shortcuts": [["steamcommunity_302.exe", "steamcommunity 302"]],
-    "persist": [
-        "S302.ini",
-        "S302.xml",
-        "steamcommunity.crt",
-        "steamcommunity.csr",
-        "steamcommunity.key",
-        "steamcommunity_302.caddy.json",
-        "steamcommunityCA.key",
-        "steamcommunityCA.pem",
-        "steamcommunityCA.srl"
-    ],
+    "persist": ["S302.ini", "S302.xml"],
     "checkver": {
         "url": "https://www.dogfight360.com/blog/686/",
         "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_V([\\d.]+)"
