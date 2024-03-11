@@ -12,5 +12,6 @@ scoop install lsilencej/neteasemusic-beta
 ## Software
 
 * file-converter
+* maa-assistant-arknights
 * neteasemusic-beta
 * wemeet
