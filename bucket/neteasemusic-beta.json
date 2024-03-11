@@ -3,7 +3,7 @@
     "description": "The official Netease Cloud Music client.(beta version)",
     "homepage": "https://music.163.com/",
     "license": {
-        "identifier": "EULA", 
+        "identifier": "EULA",
         "url": "https://music.163.com/html/web2/service.html"
     },
     "architecture": {
@@ -19,10 +19,10 @@
     "installer": {
         "script": [
             "gci \"$dir\\redist_packages\" | mi -Destination \"$dir\" -Force",
-            "$source = \"$persist_dir\\appdata\"", 
-            "$target = \"$env:LOCALAPPDATA\\Netease\\CloudMusic\"", 
-            "if (Test-Path $target) {", 
-            "   gci $target | mi -Destination $source", 
+            "$source = \"$persist_dir\\appdata\"",
+            "$target = \"$env:LOCALAPPDATA\\Netease\\CloudMusic\"",
+            "if (Test-Path $target) {",
+            "   gci $target | mi -Destination $source",
             "   ri $target",
             "}",
             "ni -ItemType Junction -Path $target -Target $source -Force | Out-Null"
@@ -32,22 +32,14 @@
     "uninstaller": {
         "script": [
             "$target = \"$env:LOCALAPPDATA\\Netease\\CloudMusic\"",
-            "if (Test-Path $target) {", 
-            "   ri $target -Force -Recurse", 
+            "if (Test-Path $target) {",
+            "   ri $target -Force -Recurse",
             "}"
         ]
     },
     "bin": "cloudmusic.exe",
-    "shortcuts": [
-        [
-            "cloudmusic.exe",
-            "网易云音乐"
-        ]
-    ],
-    "persist": [
-        "appdata", 
-        "download"
-    ],
+    "shortcuts": [["cloudmusic.exe", "网易云音乐"]],
+    "persist": ["appdata", "download"],
     "checkver": {
         "url": "https://music.163.com/api/appcustomconfig/get",
         "jsonpath": "$.data.web-pc-beta-download-links.pcPackage64",
