@@ -6,25 +6,22 @@
         "identifier": "Proprietary",
         "url": "https://rule.tencent.com/rule/ab9ea528-0bf1-47b3-a8c3-f001b98912e2"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://updatecdn.meeting.qq.com/cos/dc4d3ae9e357a0b348759a6aca324bc2/TencentMeeting_0300000000_3.24.3.406.publish.officialwebsite.exe#/dl.7z",
-            "hash": "md5:dc4d3ae9e357a0b348759a6aca324bc2"
-        }
-    },
+    "url": "https://updatecdn.meeting.qq.com/cos/dc4d3ae9e357a0b348759a6aca324bc2/TencentMeeting_0300000000_3.24.3.406.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:dc4d3ae9e357a0b348759a6aca324bc2",
+    "post_install": [
+        "rni \"$dir\\$_*_\" \"$dir\\$version\"",
+        "rm \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "rm \"$dir\\wemeetapp_new.exe\" -Force -ErrorAction SilentlyContinue"
+    ],
     "bin": "wemeetapp.exe",
     "shortcuts": [["wemeetapp.exe", "腾讯会议"]],
     "checkver": {
         "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
         "jsonpath": "$.info-list[0].url",
-        "regex": "(?<url>.+)/TencentMeeting_0300000000_(?<version>.+).publish.officialwebsite.exe"
+        "regex": "(?<commitid>w+)/TencentMeeting_0300000000_(?<version>.+).publish.officialwebsite.exe"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "$matchUrl/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe"
-            }
-        },
+        "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe#/dl.7z",
         "hash": {
             "mode": "json",
             "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
