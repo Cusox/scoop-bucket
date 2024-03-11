@@ -9,7 +9,7 @@
     "url": "https://updatecdn.meeting.qq.com/cos/dc4d3ae9e357a0b348759a6aca324bc2/TencentMeeting_0300000000_3.24.3.406.publish.officialwebsite.exe#/dl.7z",
     "hash": "md5:dc4d3ae9e357a0b348759a6aca324bc2",
     "post_install": [
-        "rni \"$dir\\$_*_\" \"$dir\\$version\"",
+        "rni \"$dir\\`$_*_\" \"$dir\\$version\"",
         "rm \"$dir\\$*\" -Recurse -Force -ErrorAction SilentlyContinue",
         "rm \"$dir\\wemeetapp_new.exe\" -Force -ErrorAction SilentlyContinue"
     ],
