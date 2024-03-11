@@ -16,7 +16,7 @@
     "bin": "wemeetapp.exe",
     "shortcuts": [["wemeetapp.exe", "腾讯会议"]],
     "checkver": {
-        "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
+        "url": "https://meeting.tencent.com/web-service/query-download-info?q%3D%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D%26nonce%3D0000000000000000",
         "jsonpath": "$.info-list[0].url",
         "regex": "(?<commitid>w+)/TencentMeeting_0300000000_(?<version>.+).publish.officialwebsite.exe"
     },
@@ -24,7 +24,7 @@
         "url": "https://updatecdn.meeting.qq.com/cos/$matchCommitid/TencentMeeting_0300000000_$matchVersion.publish.officialwebsite.exe#/dl.7z",
         "hash": {
             "mode": "json",
-            "url": "https://meeting.tencent.com/web-service/query-download-info?q=[{%22package-type%22:%22app%22,%22channel%22:%220300000000%22,%22platform%22:%22windows%22}]&nonce=0000000000000000",
+            "url": "https://meeting.tencent.com/web-service/query-download-info?q%3D%5B%7B%22package-type%22%3A%22app%22%2C%22channel%22%3A%220300000000%22%2C%22platform%22%3A%22windows%22%7D%5D%26nonce%3D0000000000000000",
             "jsonpath": "$.info-list[0].md5"
         }
     }
