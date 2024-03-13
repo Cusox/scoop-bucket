@@ -5,6 +5,7 @@
     "license": "Freeware",
     "url": "https://www.dogfight360.com/blog/wp-content/uploads/2024/03/steamcommunity_302_V12.1.36_%E8%A7%A3%E5%8E%8B%E5%AF%86%E7%A0%81dogfight360.zip#/dl",
     "hash": "5fa34b00e61f850b51ad601c72d4f6950aa2da068e07c28a17947db2ac07a50e",
+    "pre_install": ["ni \"$dir\\S302.ini\" -ItemType File"],
     "installer": {
         "script": [
             "7z x \"$dir/dl\" -o\"$dir\" -pdogfight360",
@@ -18,6 +19,7 @@
     },
     "bin": "steamcommunity_302.exe",
     "shortcuts": [["steamcommunity_302.exe", "steamcommunity 302"]],
+    "persist": ["S302.ini"],
     "checkver": {
         "url": "https://www.dogfight360.com/blog/686/",
         "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_V([\\d.]+)"
