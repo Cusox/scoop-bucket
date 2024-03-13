@@ -14,7 +14,7 @@
         }
     },
     "installer": {
-        "script": ["7z x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o \"$dir\""]
+        "script": ["7z x \"$dir\\`$PLUGINSDIR\\app-64.7z\" -o\"$dir\""]
     },
     "post_install": ["ri \"$dir\\$*\",\"$dir\\[NSIS].nsi\" -Force -Recurse"],
     "bin": "Bluestone.exe",
