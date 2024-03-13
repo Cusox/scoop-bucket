@@ -16,4 +16,5 @@ scoop install lsilencej/neteasemusic-beta
 -   maa-assistant-arknights
 -   neteasemusic-beta
 -   steamcommunity-302
+-   vfox
 -   wemeet
