@@ -14,6 +14,7 @@ scoop install lsilencej/neteasemusic-beta
 -   bluestone
 -   file-converter
 -   maa-assistant-arknights
+-   microsoft-activation-scripts
 -   neteasemusic-beta
 -   steamcommunity-302
 -   vfox
