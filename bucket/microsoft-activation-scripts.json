@@ -8,8 +8,8 @@
     "extract_dir": "Microsoft-Activation-Scripts-master",
     "installer": {
         "script": [
-            "$file = gci \"MAS\\All-In-One-Version\\MAS_AIO-*.cmd\" | select -First 1",
-            "rni $file.FullName \"MAS\\All-In-One-Version\\MAS_AIO.cmd\""
+            "$file = gci \"$dir\\MAS\\All-In-One-Version\\MAS_AIO-*.cmd\" | select -First 1",
+            "rni $file.FullName \"$dir\\MAS\\All-In-One-Version\\MAS_AIO.cmd\""
         ]
     },
     "bin": "MAS\\All-In-One-Version\\MAS_AIO.cmd",
