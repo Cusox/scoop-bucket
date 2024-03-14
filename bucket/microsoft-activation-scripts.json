@@ -6,7 +6,9 @@
     "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/master.zip",
     "hash": "7863586f017d773b133e4cce9814b0c8249cc629fb7265ba7c8408fa7d70a61a",
     "extract_dir": "Microsoft-Activation-Scripts-master",
-    "post_install": "rni \"MAS\\All-In-One-Version\\MAS_AIO-*.cmd\" \"MAS\\All-In-One-Version\\MAS_AIO.cmd\"",
+    "installer": {
+        "script": "rni \"MAS\\All-In-One-Version\\MAS_AIO-*.cmd\" \"MAS\\All-In-One-Version\\MAS_AIO.cmd\""
+    },
     "bin": "MAS\\All-In-One-Version\\MAS_AIO.cmd",
     "shortcuts": [["MAS\\All-In-One-Version\\MAS_AIO.cmd", "MAS_AIO"]],
     "checkver": {
