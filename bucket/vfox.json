@@ -68,7 +68,7 @@
         },
         "hash": {
             "url": "https://github.com/version-fox/vfox/releases/download/v$version/checksums.txt",
-            "find": "$sha256[\\S\\s]+$basename"
+            "find": "$sha256[\\S\\s]{2}$basename"
         }
     }
 }
