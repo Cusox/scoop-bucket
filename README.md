@@ -11,11 +11,12 @@ scoop install lsilencej/neteasemusic-beta
 
 ## Software
 
--   bluestone
--   file-converter
--   maa-assistant-arknights
--   microsoft-activation-scripts
--   neteasemusic-beta
--   steamcommunity-302
--   vfox
--   wemeet
+- bluestone
+- file-converter
+- maa-assistant-arknights
+- microsoft-activation-scripts
+- neteasemusic-beta
+- steamcommunity-302
+- telegram
+- vfox
+- wemeet
