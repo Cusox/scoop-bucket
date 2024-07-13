@@ -1,12 +1,12 @@
 # Scoop Bucket
 
-lsilencej's scoop bucket (auto update available)
+Cusox's scoop bucket (auto update available)
 
-## Install
+## Install Example
 
 ```powershell
-scoop bucket add lsilencej https://github.com/lsilencej/scoop-bucket
-scoop install lsilencej/neteasemusic-beta
+scoop bucket add cusox https://github.com/Cusox/scoop-bucket
+scoop install cusox/neteasemusic-beta
 ```
 
 ## Software
@@ -16,6 +16,7 @@ scoop install lsilencej/neteasemusic-beta
 - maa-assistant-arknights
 - microsoft-activation-scripts
 - neteasemusic-beta
+- neteaseuu
 - steamcommunity-302
 - telegram
 - vfox
