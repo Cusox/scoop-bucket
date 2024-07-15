@@ -13,6 +13,7 @@ scoop install cusox/neteasemusic-beta
 
 - bluestone
 - file-converter
+- lxgw-wenkai-mono-screen
 - maa-assistant-arknights
 - microsoft-activation-scripts
 - neteasemusic-beta
