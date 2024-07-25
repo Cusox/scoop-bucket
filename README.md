@@ -15,7 +15,7 @@ scoop install cusox/neteasemusic-beta
 - lxgw-wenkai-mono-screen
 - maa-assistant-arknights
 - microsoft-activation-scripts
-- neteasemusic-beta
+- neteasemusic
 - neteaseuu
 - quarkpan
 - steamcommunity-302
