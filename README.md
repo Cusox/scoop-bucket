@@ -19,6 +19,7 @@ scoop install cusox/neteasemusic-beta
 - neteaseuu
 - quarkpan
 - steamcommunity-302
+- sync-clipboard
 - telegram
 - vfox
 - wemeet
