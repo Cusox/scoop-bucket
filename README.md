@@ -6,7 +6,7 @@ Cusox's scoop bucket (auto update available)
 
 ```powershell
 scoop bucket add cusox https://github.com/Cusox/scoop-bucket
-scoop install cusox/neteasemusic-beta
+scoop install cusox/neteasemusic
 ```
 
 ## Software
@@ -22,5 +22,4 @@ scoop install cusox/neteasemusic-beta
 - steamcommunity-302
 - sync-clipboard
 - telegram
-- vfox
 - wemeet
