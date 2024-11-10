@@ -14,7 +14,6 @@ scoop install cusox/neteasemusic
 - file-converter
 - lxgw-wenkai-mono-screen
 - maa-assistant-arknights
-- microsoft-activation-scripts
 - mihomo-party
 - neteasemusic
 - neteaseuu
