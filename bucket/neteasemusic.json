@@ -55,16 +55,16 @@
     ],
     "checkver": {
         "url": "https://music.163.com/api/appcustomconfig/get",
-        "jsonpath": "$.data.web-pc-beta-download-links.pcPackage64",
+        "jsonpath": "$.data.web-new-download.pc64.downloadUrl",
         "regex": "NeteaseCloudMusic_Music_official_(?<version>.*?)_64.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$matchVersion_64.exe#/dl.7z"
+                "url": "https://d8.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$matchVersion_64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$matchVersion_32.exe#/dl.7z"
+                "url": "https://d8.music.126.net/dmusic/NeteaseCloudMusic_Music_official_$matchVersion_32.exe#/dl.7z"
             }
         }
     }
