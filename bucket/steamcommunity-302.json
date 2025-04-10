@@ -3,7 +3,7 @@
     "description": "Reverse proxy tool.",
     "homepage": "https://www.dogfight360.com/blog/18682",
     "license": "Freeware",
-    "url": "https://www.dogfight360.com/blog/wp-content/uploads/2025/04/steamcommunity_302_AMD64_V13.0.03.zip#dl",
+    "url": "https://www.dogfight360.com/blog/wp-content/uploads/2025/04/steamcommunity_302_AMD64_V13.0.03.zip#dl.7z",
     "hash": "md5:02704f5aa9a314bd5a9f7c6739d5badf",
     "pre_install": "ni \"$dir\\S302.ini\" -ItemType File",
     "installer": {
@@ -30,6 +30,6 @@
         "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_AMD64_V([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version.zip#dl"
+        "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version.zip#dl.7z"
     }
 }
