@@ -1,35 +1,35 @@
 {
-    "version": "12.1.46",
+    "version": "13.0.03",
     "description": "Reverse proxy tool.",
-    "homepage": "https://www.dogfight360.com/blog/686/",
+    "homepage": "https://www.dogfight360.com/blog/18682",
     "license": "Freeware",
-    "url": "https://www.dogfight360.com/blog/wp-content/uploads/2024/11/steamcommunity_302_V12.1.46_%E8%A7%A3%E5%8E%8B%E5%AF%86%E7%A0%81dogfight360.zip#/dl",
-    "hash": "17563dc71acc33823cec4344e18ca3d129c39b032bb348a63b701fe4d29f80e6",
+    "url": "https://www.dogfight360.com/blog/wp-content/uploads/2025/04/steamcommunity_302_AMD64_V13.0.03.zip",
+    "hash": "md5:02704f5aa9a314bd5a9f7c6739d5badf",
     "pre_install": "ni \"$dir\\S302.ini\" -ItemType File",
     "installer": {
         "script": [
-            "7z x \"$dir/dl\" -o\"$dir\" -pdogfight360",
-            "gci \"$dir\\steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | gci | mi -Destination \"$dir\"",
-            "if (Test-Path \"$dir\\steamcommunity_302\") {",
-            "  gci \"$dir\\steamcommunity_302\" | mi -Destination \"$dir\"",
+            "7z x \"$dir/dl\" -o\"$dir\"",
+            "gci \"$dir\\Steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | gci | mi -Destination \"$dir\"",
+            "if (Test-Path \"$dir\\Steamcommunity_302\") {",
+            "  gci \"$dir\\Steamcommunity_302\" | mi -Destination \"$dir\"",
             "}",
-            "gci \"$dir\\steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | ri",
+            "gci \"$dir\\Steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | ri",
             "ri \"$dir/dl\""
         ]
     },
-    "bin": "steamcommunity_302.exe",
+    "bin": "Steamcommunity_302.exe",
     "shortcuts": [
         [
-            "steamcommunity_302.exe",
-            "steamcommunity 302"
+            "Steamcommunity_302.exe",
+            "Steamcommunity 302"
         ]
     ],
     "persist": "S302.ini",
     "checkver": {
-        "url": "https://www.dogfight360.com/blog/686/",
-        "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_V([\\d.]+)"
+        "url": "https://www.dogfight360.com/blog/18682/",
+        "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_AMD64_V([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_V$version_%E8%A7%A3%E5%8E%8B%E5%AF%86%E7%A0%81dogfight360.zip#/dl"
+        "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version.zip#dl"
     }
 }
