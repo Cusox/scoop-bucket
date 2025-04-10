@@ -14,7 +14,6 @@
             "  gci \"$dir\\Steamcommunity_302\" | mi -Destination \"$dir\"",
             "}",
             "gci \"$dir\\Steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | ri",
-            "ri \"$dir/dl\""
         ]
     },
     "bin": "Steamcommunity_302.exe",
