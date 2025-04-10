@@ -8,7 +8,6 @@
     "pre_install": "ni \"$dir\\S302.ini\" -ItemType File",
     "installer": {
          "script": [
-             "7z x \"$dir/$fname\" -o\"$dir\"",
              "gci \"$dir\\Steamcommunity_302*\" -Directory | ?{$_.psiscontainer -eq $true} | gci | mi -Destination \"$dir\"",
              "if (Test-Path \"$dir\\Steamcommunity_302\") {",
              "  gci \"$dir\\Steamcommunity_302\" | mi -Destination \"$dir\"",
