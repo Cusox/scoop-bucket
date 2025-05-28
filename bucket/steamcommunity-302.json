@@ -25,7 +25,7 @@
     "persist": "S302.ini",
     "checkver": {
         "url": "https://www.dogfight360.com/blog/18682/",
-        "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_AMD64_V([\\d.]+)"
+        "regex": "uploads/(?<date>[\\d/]+)/steamcommunity_302_AMD64_V([\\d.]+).zip"
     },
     "autoupdate": {
         "url": "https://www.dogfight360.com/blog/wp-content/uploads/$matchDate/steamcommunity_302_AMD64_V$version.zip"
