@@ -9,6 +9,11 @@
             "hash": "50312bd2f3d27e9170bb95fbed9ca65b5fdcbbf5a31425a1d7f73754833ee699"
         }
     },
+    "pre_install": [
+        "$subDir = (Get-ChildItem \"$dir\" | Select-Object -First 1).Name",
+        "Move-Item \"$dir\\$subDir\\*\" \"$dir\"",
+        "Remove-Item \"$dir\\$subDir\" -Recurse"
+    ],
     "bin": "snowshot.exe",
     "shortcuts": [
         [
