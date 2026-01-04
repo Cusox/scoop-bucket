@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mg-chao/snow-shot/releases/download/$version/Snow.Shot_$version_windows-x64-portable.zip",
+                "url": "https://github.com/mg-chao/snow-shot/releases/download/$version-beta/Snow.Shot_$version_windows-x64-portable.zip",
             }
         }
     }
