@@ -1,12 +1,12 @@
 {
-    "version": "6.4.2",
+    "version": "6.5.0",
     "description": "Telegram Desktop messaging app",
     "homepage": "https://telegram.org/",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://td.telegram.org/tx64/tportable-x64.6.4.2.zip",
-            "hash": "e2c385cc69e46cc9d46962e4d25ef5300220511d72cebfcb81114258bd46bbcb"
+            "url": "https://td.telegram.org/tx64/tportable-x64.6.5.0.zip",
+            "hash": "771e89e9ddb649a6b3de88db13a9753588d8eff8b16519eb2e857450b777930c"
         },
         "arm64": {
             "url": "https://td.telegram.org/tsetup/tportable.4.16.4.zip",
